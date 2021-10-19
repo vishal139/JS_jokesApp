@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.main_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(231, 223, 223),rgba(252, 241, 241, 0.4));
+    justify-content: space-evenly;
+}
+.card{
+    height: 300px;
+    width: 40%px;
+    background-color:rgb(235, 211, 211);
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgb(255, 255, 255),-5px -5px 10px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.btn{
+    color: white;
+    height: 40px;
+    width: 160px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(91, 141, 235);
+    cursor: pointer;
+    
+}
+.card .joke{
+    padding: 5%;
+    text-align: center;
+}
+.btn:hover{
+    background-color:  rgb(39, 99, 212);
+    animation: myanim 0.7 ease-in-out both;
+}
+
+@keyframes myanim {
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    25%{
+        transform: translate3d(10px,0,0);     
+    }
+    50%{
+        transform: translate3d(-9px,0,0);
+    }
+    75%{
+        transform: translate3d(3px,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+    
+}
+
+@media  (max-width:768px){
+    .card{
+        margin: 5%;
+    }
+    
+}
